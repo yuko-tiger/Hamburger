@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* Scss Document */
+/*全体のスタイル調整　*/
+/* line 6, style - コピー.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*bodyの初期スタイル調整　*/
+/* line 12, style - コピー.scss */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+  color: #333; }
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+/* line 34, style - コピー.scss */
+body {
+  background-color: white; }
+  @media only screen and (max-width: 640px) {
+    /* line 34, style - コピー.scss */
+    body {
+      background-color: blue; } }
+  @media only screen and (max-width: 768px) {
+    /* line 34, style - コピー.scss */
+    body {
+      background-color: green; } }
+  @media only screen and (min-width: 960px) {
+    /* line 34, style - コピー.scss */
+    body {
+      background-color: red; } }
+
+/* Header
+------------------------------------------------------------*/
+/* line 49, style - コピー.scss */
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff6ef;
+  color: #70706E; }
+
+/*ナビゲーション*/
+/* サイトロゴの表示　*/
+/* line 60, style - コピー.scss */
+.left {
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+/* line 65, style - コピー.scss */
+.right {
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+/* line 71, style - コピー.scss */
+.header1 {
+  display: flex;
+  flex-direction: column; }
+
+/* line 76, style - コピー.scss */
+.header2 {
+  flex: 1;
+  margin-top: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style-type: none; }
+
+/* Search 検索窓
+------------------------------------------------------------*/
+/* line 88, style - コピー.scss */
+form {
+  width: 500px;
+  margin: 0 auto; }
+
+/* line 92, style - コピー.scss */
+.search {
+  padding: 6px 15px 6px 30px;
+  margin: 3px;
+  background: url("../img/search.png") no-repeat 8px 6px; }
+
+/* line 98, style - コピー.scss */
+input[type=button], input[type=button]:hover {
+  position: relative;
+  left: -6px;
+  border: 1px solid #adc5cf;
+  background: #e4f1f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4f1f9), color-stop(100%, #d5e7f3));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 );
+  /* IE6-9 */
+  color: #7da2aa;
+  cursor: pointer; }
+
+/*ハンバーガーメニュー*/
+/* line 116, style - コピー.scss */
+#nav-drawer {
+  position: relative; }
+
+/*チェックボックス等は非表示に*/
+/* line 121, style - コピー.scss */
+.nav-unshown {
+  display: none; }
+
+/* line 125, style - コピー.scss */
+#open a {
+  width: 60px;
+  line-height: 30px;
+  text-decoration: none; }
+
+/* line 131, style - コピー.scss */
+#close a {
+  color: #fff;
+  background: #aaa;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 15px; }
+
+/* line 138, style - コピー.scss */
+#sidebar {
+  z-index: 500; }
+
+/* line 142, style - コピー.scss */
+#g_menu li {
+  list-style: none; }
+
+/* line 146, style - コピー.scss */
+#g_menu a {
+  color: gray; }
+
+/* line 150, style - コピー.scss */
+#g_menu {
+  height: 100%;
+  width: 300px;
+  padding: 20px;
+  background: #F2EDE9;
+  /*背景色*/
+  transition: right 1s;
+  position: fixed;
+  top: 0; }
+
+/* line 160, style - コピー.scss */
+#g_menu:not(:target) {
+  right: -100%; }
+
+/* line 164, style - コピー.scss */
+#g_menu:target {
+  right: 0; }
+
+@media only screen and (max-width: 768px) {
+  /* line 171, style - コピー.scss */
+  .left {
+    text-align: left; }
+
+  /* line 174, style - コピー.scss */
+  .right {
+    text-align: left;
+    margin-top: 20px; }
+
+  /* line 179, style - コピー.scss */
+  #wrapper {
+    width: 80%; }
+
+  /* line 183, style - コピー.scss */
+  #content {
+    width: 80%; }
+
+  /* line 186, style - コピー.scss */
+  .header {
+    width: 80%; }
+
+  /* line 189, style - コピー.scss */
+  .header1 {
+    display: flex;
+    flex-direction: row; }
+
+  /* line 193, style - コピー.scss */
+  .footer {
+    width: 80%; }
+
+  /* line 197, style - コピー.scss */
+  #sidebar {
+    position: fixed;
+    width: 100%;
+    z-index: 500; }
+
+  /* line 203, style - コピー.scss */
+  #sidebarWrap {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #fff; }
+
+  /* line 210, style - コピー.scss */
+  #open {
+    display: none; }
+
+  /* line 213, style - コピー.scss */
+  #close {
+    display: none; }
+
+  /* line 216, style - コピー.scss */
+  .plan-op {
+    flex-direction: row; }
+
+  /* line 219, style - コピー.scss */
+  .plan-menu {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  /* line 225, style - コピー.scss */
+  #g_menu:not(:target) {
+    right: 0%; } }
+@media only screen and (min-width: 960px) {
+  /* line 233, style - コピー.scss */
+  body {
+    font-size: 14px; }
+
+  /* line 237, style - コピー.scss */
+  #wrapper {
+    width: 80%; }
+
+  /* line 241, style - コピー.scss */
+  #content {
+    width: 80%; }
+
+  /* line 244, style - コピー.scss */
+  .header {
+    width: 80%; }
+
+  /* line 247, style - コピー.scss */
+  .header1 {
+    display: flex;
+    flex-direction: row; }
+
+  /* line 251, style - コピー.scss */
+  .left {
+    text-align: left; }
+
+  /* line 254, style - コピー.scss */
+  .right {
+    text-align: left;
+    margin-top: 20px; }
+
+  /* line 258, style - コピー.scss */
+  .footer {
+    width: 80%; }
+
+  /* line 261, style - コピー.scss */
+  #sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 4%;
+    background: #BLACK;
+    z-index: 500; }
+
+  /* line 269, style - コピー.scss */
+  #sidebarWrap {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #RED; }
+
+  /* line 276, style - コピー.scss */
+  #open {
+    display: none; }
+
+  /* line 279, style - コピー.scss */
+  #close {
+    display: none; }
+
+  /* line 282, style - コピー.scss */
+  .plan-op {
+    flex-direction: row; }
+
+  /* line 285, style - コピー.scss */
+  .plan-menu {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  /* line 291, style - コピー.scss */
+  #g_menu:not(:target) {
+    right: 0%; } }
+
+/*# sourceMappingURL=style%20-%20%E3%82%B3%E3%83%94%E3%83%BC.css.map */
