@@ -1,97 +1,101 @@
 @charset "UTF-8";
 /* Scss Document */
 /*全体のスタイル調整　*/
-/* line 6, style.scss */
 *, *:before, *:after {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+}
 
 /*bodyの初期スタイル調整　*/
-/* line 12, style.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
-  color: #333; }
+  color: #333;
+}
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 @media only screen and (max-width: 640px) {
-  /* line 34, style.scss */
   body {
-    background-color: blue; } }
-@media only screen and (max-width: 768px) {
-  /* line 34, style.scss */
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   body {
-    background-color: green; } }
+    background-color: green;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  /* line 34, style.scss */
   body {
-    background-color: red; } }
+    background-color: red;
+  }
+}
 
-/* line 46, style.scss */
 h1 {
-  margin: auto 100px; }
+  margin: auto 100px;
+}
 
-/* line 50, style.scss */
 h2 {
-  color: white; }
+  color: white;
+}
 
-/* line 54, style.scss */
 h6 {
   color: gray;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 /* Header
 ------------------------------------------------------------*/
-/* line 61, style.scss */
 .header {
   width: 100%;
   padding: 20px;
-  background-color: #fff6ef;
-  color: #70706E; }
+  background-color: #ffeff6;
+  color: #70706E;
+}
 
 /*ナビゲーション*/
 /* サイトロゴの表示　*/
-/* line 72, style.scss */
 .left {
   width: 100%;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+}
 
-/* line 77, style.scss */
 .right {
   width: 100%;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+}
 
-/* line 83, style.scss */
 .header1 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
-/* line 88, style.scss */
 .header2 {
   flex: 1;
   margin-top: 0;
   margin-left: 15px;
   margin-right: 15px;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 /* Search 検索窓
 ------------------------------------------------------------*/
-/* line 100, style.scss */
 form {
   width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* line 104, style.scss */
 .search {
   padding: 6px 15px 6px 30px;
   margin: 3px;
-  background: url("../img/search.png") no-repeat 8px 6px; }
+  background: url("../img/search.png") no-repeat 8px 6px;
+}
 
-/* line 110, style.scss */
 input[type=button], input[type=button]:hover {
   position: relative;
   left: -6px;
@@ -113,49 +117,49 @@ input[type=button], input[type=button]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 );
   /* IE6-9 */
   color: #7da2aa;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*ハンバーガーメニュー*/
-/* line 129, style.scss */
 #nav-drawer {
-  position: relative; }
+  position: relative;
+}
 
 /*チェックボックス等は非表示に*/
-/* line 134, style.scss */
 .nav-unshown {
-  display: none; }
+  display: none;
+}
 
-/* line 138, style.scss */
 #open a {
   width: 60px;
   line-height: 30px;
   text-decoration: none;
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 146, style.scss */
 #close a {
   color: #fff;
   background: #aaa;
   width: 30px;
   line-height: 30px;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
-/* line 153, style.scss */
 #sidebar {
-  z-index: 500; }
+  z-index: 500;
+}
 
-/* line 157, style.scss */
 #g_menu li {
   list-style: none;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
-/* line 162, style.scss */
 #g_menu a {
   color: gray;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 167, style.scss */
 #g_menu {
   height: 100%;
   width: 300px;
@@ -164,22 +168,22 @@ input[type=button], input[type=button]:hover {
   /*背景色*/
   transition: right 1s;
   position: fixed;
-  top: 0; }
+  top: 0;
+}
 
-/* line 177, style.scss */
 #g_menu:not(:target) {
-  right: -100%; }
+  right: -100%;
+}
 
-/* line 181, style.scss */
 #g_menu:target {
-  right: 0; }
+  right: 0;
+}
 
 /*  メイン  */
-/* line 187, style.scss */
 .title {
-  position: relative; }
+  position: relative;
+}
 
-/* line 191, style.scss */
 .title p {
   position: absolute;
   top: 50%;
@@ -191,164 +195,123 @@ input[type=button], input[type=button]:hover {
   padding: 0;
   color: #FFF;
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 205, style.scss */
 .title img {
   width: 100%;
-  　height: auto; }
+}
 
-@media only screen and (max-width: 768px) {
-  /* line 212, style.scss */
+@media only screen and (min-width: 768px) {
   .left {
-    text-align: left; }
-
-  /* line 215, style.scss */
+    text-align: left;
+  }
   .right {
     text-align: left;
-    margin-top: 20px; }
-
-  /* line 220, style.scss */
+    margin-top: 20px;
+  }
   #wrapper {
-    width: 80%; }
-
-  /* line 224, style.scss */
+    width: 80%;
+  }
   #content {
-    width: 80%; }
-
-  /* line 227, style.scss */
+    width: 80%;
+  }
   .header {
-    width: 80%; }
-
-  /* line 230, style.scss */
+    width: 80%;
+  }
   .header1 {
     display: flex;
-    flex-direction: row; }
-
-  /* line 234, style.scss */
+    flex-direction: row;
+  }
   .footer {
-    width: 80%; }
-
-  /* line 238, style.scss */
+    width: 80%;
+  }
   #sidebar {
     position: fixed;
     width: 100%;
-    z-index: 500; }
-
-  /* line 244, style.scss */
-  #sidebarWrap {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    background: #fff; }
-
-  /* line 251, style.scss */
+    z-index: 500;
+  }
   #open {
-    display: none; }
-
-  /* line 254, style.scss */
+    display: none;
+  }
   #close {
-    display: none; }
-
-  /* line 257, style.scss */
+    display: none;
+  }
   .plan-op {
-    flex-direction: row; }
-
-  /* line 260, style.scss */
+    flex-direction: row;
+  }
   .plan-menu {
     flex: 1;
     margin-top: 0;
     margin-left: 10px;
-    margin-right: 10px; }
-
-  /* line 266, style.scss */
+    margin-right: 10px;
+  }
   #g_menu:not(:target) {
-    right: 0%; }
-
-  /* line 270, style.scss */
+    right: 0%;
+  }
   .title {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../img/p2.jpg");
-    background-repeat: no-repeat; }
-
-  /* line 278, style.scss */
+    background-repeat: no-repeat;
+  }
   .title img {
-    display: none; } }
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  /* line 286, style.scss */
   body {
-    font-size: 14px; }
-
-  /* line 290, style.scss */
+    font-size: 14px;
+  }
   #wrapper {
-    width: 80%; }
-
-  /* line 294, style.scss */
+    width: 85%;
+  }
   #content {
-    width: 80%; }
-
-  /* line 297, style.scss */
+    width: 85%;
+  }
   .header {
-    width: 80%; }
-
-  /* line 300, style.scss */
+    width: 85%;
+  }
   .header1 {
     display: flex;
-    flex-direction: row; }
-
-  /* line 304, style.scss */
+    flex-direction: row;
+  }
   .left {
-    text-align: left; }
-
-  /* line 307, style.scss */
+    text-align: left;
+  }
   .right {
     text-align: left;
-    margin-top: 20px; }
-
-  /* line 311, style.scss */
+    margin-top: 20px;
+  }
   .footer {
-    width: 80%; }
-
-  /* line 314, style.scss */
+    width: 80%;
+  }
   #sidebar {
     width: 100%;
     position: fixed;
     top: 0;
     right: 4%;
-    background: #BLACK;
-    z-index: 500; }
-
-  /* line 322, style.scss */
-  #sidebarWrap {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    background: #RED; }
-
-  /* line 329, style.scss */
+    z-index: 500;
+  }
   #open {
-    display: none; }
-
-  /* line 332, style.scss */
+    display: none;
+  }
   #close {
-    display: none; }
-
-  /* line 335, style.scss */
+    display: none;
+  }
   .plan-op {
-    flex-direction: row; }
-
-  /* line 338, style.scss */
+    flex-direction: row;
+  }
   .plan-menu {
     flex: 1;
     margin-top: 0;
     margin-left: 10px;
-    margin-right: 10px; }
-
-  /* line 344, style.scss */
+    margin-right: 10px;
+  }
   #g_menu:not(:target) {
-    right: 0%; } }
-
-/*# sourceMappingURL=style.css.map */
+    right: 0%;
+  }
+}

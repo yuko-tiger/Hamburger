@@ -21,7 +21,7 @@ body{
 
 $breakpoints:(
 	sp: "only screen and (max-width: 640px)",
-	tb: "only screen and (max-width: 768px)",
+	tb: "only screen and (min-width: 768px)",
 	pc: "only screen and (min-width: 960px)",
 );
 
@@ -61,7 +61,7 @@ h6 {
 .header {
 	width : 100%;
 	padding: 20px;
-	background-color: #fff6ef;
+	background-color: #ffeff6;
 	color :#70706E;
 }
 
@@ -204,7 +204,6 @@ input[type=button], input[type=button]:hover {
 
 .title img {
   width: 100%;
-　height: auto;
   }
 
 @include media(tb) {
@@ -240,14 +239,7 @@ input[type=button], input[type=button]:hover {
 		width: 100%;
 		z-index:500;
 	}
-	
-	#sidebarWrap{
-		position: relative;
-		width: 100%;
-		height: 60px;
-		background: #fff;
-	}
-	
+		
 	#open {
     display:none;
   }
@@ -288,14 +280,14 @@ body{
 	}
 	
 	#wrapper{
-		width: 80%;
+		width: 85%;
 	}
 	
 	#content{
-		width: 80%;
+		width: 85%;
 	}
 	.header {
-		width: 80%;
+		width: 85%;
 	}
 	.header1 {
 	display: flex;
@@ -316,16 +308,9 @@ body{
 		position: fixed;
 		top: 0;
 		right: 4%;
-		background: #BLACK;
 		z-index:500;
 	}
-	#sidebarWrap{
-		position: relative;
-		width: 100%;
-		height: 60px;
-		background: #RED;
-	}
-	
+		
 	#open {
     display:none;
   }
